@@ -17,9 +17,9 @@ Tout autre verbe HTTP et/ou route donne un code 404 avec une réponse vide.
 
 Ce deuxième TP contient deux Dockerfiles permettant de lancer notre application :
 
-Dockerfile : contient un seul stage
+- Dockerfile : contient un seul stage
 
-Dockerfile.multi : contient deux stages afin de séparer les étapes de build et d'exécution
+- Dockerfile.multi : contient deux stages afin de séparer les étapes de build et d'exécution
 
 ### 🛠️ Comment lancer le projet ?
 ## 🔐 Version Single Stage
