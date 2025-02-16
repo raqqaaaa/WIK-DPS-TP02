@@ -13,14 +13,16 @@ Exemple de réponse :
 ```
 Tout autre verbe HTTP et/ou route donne un code 404 avec une réponse vide.
 
-⚡ Mise à jour dans le TP 2
+### ⚡ Mise à jour dans le TP 2
 
 Ce deuxième TP contient deux Dockerfiles permettant de lancer notre application :
 
-Dockerfile.single : contient un seul stage
+Dockerfile : contient un seul stage
+
 Dockerfile.multi : contient deux stages afin de séparer les étapes de build et d'exécution
-🛠️ Comment lancer le projet ?
-🔐 Version Single Stage
+
+### 🛠️ Comment lancer le projet ?
+## 🔐 Version Single Stage
 
 ```sh
 docker build --no-cache -f Dockerfile -t api-single .
@@ -28,7 +30,7 @@ docker run -d -p 3000:3000 --name single api-single
 docker rm -f single
 ```
 
-🔐 Version Multi Stage
+## 🔐 Version Multi Stage
 ```sh
 docker build --no-cache -f Dockerfile.multi -t api-multi .
 docker run -d -p 3000:3000 --name multi api-multi
